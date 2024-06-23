@@ -4,7 +4,10 @@
   "description": "Curso de cypress basico pela Udemy",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "cyOpen": "cypress open",
+    "cyRun": "cypress run",
+    "cyOpenMobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cyRunMobile": "cypress run --config viewportWidth=410 viewportHeight=860"
   },
   "keywords": [],
   "author": "",
