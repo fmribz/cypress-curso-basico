@@ -8,10 +8,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Cypress run
         uses: cypress-io/github-action@v6
+      - uses: actions/setup-node@v4
         with:
-          start: npm start
-          wait-on: 'http://localhost:3000' # Waits for above
-          record: true
-          parallel: true
+          node-version: '20'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
