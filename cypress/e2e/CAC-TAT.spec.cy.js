@@ -224,4 +224,10 @@ describe('Central de Atendimento ao Cliente - TAT', () => {
       console.log(response)
     })
   });
+  it('encontrando o gato', () => {
+    cy.get('#cat')
+      .should('not.be.visible')
+      .invoke('show')
+      .should('be.visible')
+  });
 })
